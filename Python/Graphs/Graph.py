@@ -1,4 +1,5 @@
 from collections import deque
+from sys import maxsize
 
 
 class Graph:
@@ -72,8 +73,49 @@ class Graph:
 
 		for i in range(self.vertices):
 			if visited[i] is False:
-				print(i)
 				visited, stack = self.topSortUtil(i, visited, stack)
-		print(stack)
 		# Reversing the list is same as popping all elems to a list
 		return list(stack)[::-1]
+
+	# Source: https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+	def minDistance(self, dist, sptSet):
+		minDist = maxsize
+
+		for v in range(self.vertices):
+			# Find the vertex if they are not in min distance vertex
+			if dist[v] < minDist and sptSet[v] is False:
+				minDist = dist[v]
+				min_index = v
+
+		return min_index
+
+	def dijkstra(self, origin):
+		print('We called the function')
+		# Put every vertice distance be inf
+		dist = [maxsize for i in range(self.vertices)]
+		# Origin to origin is 0 in distance
+		dist[origin] = 0
+		# Declase a list of visited to keep track
+		sptSet = [False for i in range(self.vertices)]
+
+		for _ in range(self.vertices):
+			# Find the closest vertex
+			u = self.minDistance(dist, sptSet)
+			# Keep track of the min distance vertex has found
+			sptSet[u] = True
+			print(sptSet)
+			print('Now is', _)
+			print('u is', u)
+
+			# Update distance of adjacent vertices of picked vertex
+			# if the current distance is greater than new distance
+			for v in range(self.vertices):
+				print(dist[u],'+',self.edges[u][v],'=',dist[u] + self.edges[u][v])
+				if self.edges[u][v] > 0 and sptSet[v] is False and \
+				dist[v] > dist[u] + self.edges[u][v]:
+					dist[v] = dist[u] + self.edges[u][v]
+			print(dist)
+
+		print("Vertex \tDistance from Source")
+		for node in range(self.vertices): 
+			print(node, "\t", dist[node])
