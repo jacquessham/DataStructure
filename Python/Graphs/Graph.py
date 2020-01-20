@@ -110,6 +110,9 @@ class Graph:
 			# Update distance of adjacent vertices of picked vertex
 			# if the current distance is greater than new distance
 			for v in range(self.vertices):
+				# Check vertex exists, self.edges[u][v] > 0
+				# Whether this node is on min distance, if True, pass
+				# Compare distance, take the lower one
 				print(dist[u],'+',self.edges[u][v],'=',dist[u] + self.edges[u][v])
 				if self.edges[u][v] > 0 and sptSet[v] is False and \
 				dist[v] > dist[u] + self.edges[u][v]:
