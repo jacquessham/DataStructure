@@ -43,3 +43,8 @@ for key in num2city:
 for key in num2city:
 	tcost = flightroutes.outCost(key)
 	print(num2city[key],': ',tcost,sep='')
+
+topSortRoutes = flightroutes.topologicalSort()
+for num in topSortRoutes:
+	print(num2city[num])
+
