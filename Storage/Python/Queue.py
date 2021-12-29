@@ -1,5 +1,6 @@
 from LinkedList import LinkedList
 
+
 class ArrayQueue:
     def __init__(self):
         self.arr = []

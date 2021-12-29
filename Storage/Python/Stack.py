@@ -1,5 +1,6 @@
 from LinkedList import LinkedList
 
+
 class ArrayStack:
     def __init__(self):
         self.arr = []

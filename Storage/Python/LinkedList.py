@@ -1,5 +1,6 @@
 from Link import Link
 
+
 class LinkedList:
     def __init__(self, elem=None):
         # Top has to be Node object
@@ -16,12 +17,13 @@ class LinkedList:
 
     def add_Elem_pos(self, pos, elem):
         # Stop if pos is greater than the linkedlist size
-        if pos > self.size: return None
+        if pos > self.size: return
         new_node = Link(elem)
         # If Add node at top
         if pos == 0:
             new_node.setNext(self.top)
             self.top = new_node
+            return
         temp = self.top
         it = 0
         # Loop until the previous node of pos
@@ -43,7 +45,7 @@ class LinkedList:
     def remove(self, pos):
         # Stop if pos is greater than the linkedlist size
         if pos > self.size: return
-        # Remove the top
+        # If removing the top
         if pos == 0:
             if self.top.getNext() is not None:
                 self.top = self.top.getNext()
@@ -72,13 +74,14 @@ class LinkedList:
     def get(self, pos):
         # If linkedlist is empty
         if self.size == 0: return None
+        # If pos is greater than size
         if pos > self.size: return None
         temp = self.top
         it = 0
         while temp.getNext() is not None and it < pos:
             temp = temp.getNext()
             it += 1
-        return temp.elem
+        return temp.getElem()
 
     def getSize(self) -> int:
         return self.size
