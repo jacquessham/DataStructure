@@ -5,7 +5,7 @@ import Graph
 routes = {}
 city2num = {}
 num2city = {}
-with open('GraphData.csv', newline='', encoding='utf-8-sig') as csvfile:
+with open('../Data/GraphData.csv', newline='', encoding='utf-8-sig') as csvfile:
 	filereader = csv.reader(csvfile, delimiter=',')
 	# Skip the header
 	next(filereader)

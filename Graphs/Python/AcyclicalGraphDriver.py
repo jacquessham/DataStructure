@@ -5,7 +5,7 @@ import Graph
 classes = {}
 class2num = {}
 num2class = {}
-with open('SimpleAcylicalGraphData.csv', newline='', encoding='utf-8-sig') as csvfile:
+with open('../Data/SimpleAcylicalGraphData.csv', newline='', encoding='utf-8-sig') as csvfile:
 	filereader = csv.reader(csvfile, delimiter=',')
 	# Skip the header
 	next(filereader)
