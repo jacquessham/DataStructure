@@ -5,7 +5,5 @@ def insertionSort(arr: list) -> list:
 		while (arr[j]> temp and j >= 0):
 			arr[j+1] = arr[j]
 			j -= 1
-			print(arr)
 		arr[j+1] = temp
-		print(arr)
 	return arr
