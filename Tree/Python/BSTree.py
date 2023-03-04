@@ -94,13 +94,13 @@ class BSTree:
 	def printElem_preorder(self, node):
 		if node is None: return
 		print(node.getElem())
-		self.printElem_inorder(node.getLeft())
-		self.printElem_inorder(node.getRight())
+		self.printElem_preorder(node.getLeft())
+		self.printElem_preorder(node.getRight())
 
 	def printElem_postorder(self, node):
 		if node is None: return
-		self.printElem_inorder(node.getLeft())
-		self.printElem_inorder(node.getRight())
+		self.printElem_postorder(node.getLeft())
+		self.printElem_postorder(node.getRight())
 		print(node.getElem())
 
 	def printElem(self, order='in'):
