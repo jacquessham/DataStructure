@@ -3,6 +3,7 @@ We have the scripts in following language:
 <ul>
 	<li>Python</li>
 	<li>Ruby</li>
+	<li>Rust</li>
 </ul>
 <br><br>
 In each folder, you may find the scripts for the examples which applies the recursion method, such as:
