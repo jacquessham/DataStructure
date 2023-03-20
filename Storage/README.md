@@ -12,11 +12,11 @@ There are 5 types of storages available in this folder.
 ## Files
 There are 4 object files and 1 driver file in each folder for the corresponding language. 
 <ul>
-	<li>Link.(py/rb)</li>
-	<li>LinkedList.(py/rb)</li>
-	<li>Queue.(py/rb)</li>
-	<li>Stack.(py/rb)</li>
-	<li>StorageDriver(py/rb)</li>
+	<li>Link.(py/rb, not available in Java)</li>
+	<li>LinkedList.(py/rb, not available in Java)</li>
+	<li>Queue.(java/py/rb)</li>
+	<li>Stack.(java/py/rb)</li>
+	<li>StorageDriver(py/rb, not available in Java)</li>
 </ul>
 
 ### Link.(py/rb)
@@ -28,5 +28,11 @@ This is the file for linked list. It has the top linked list node and the size o
 ### Queue.(py/rb)
 This is the file for queue. It has 2 classes: Array queue and linked list queue.
 
+### Queue.java
+This is the file for the interface Queue, along with ArrayQueue.java file.
+
 ### Stack.(py/rb)
 This is the file for stack. It has 2 classes: Array stack and linked list stack.
+
+### Stack.java
+This is the file for the interface Stack, along with ArrayStack.java file.

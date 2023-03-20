@@ -1,8 +1,8 @@
 # Graph
 
 ## Files
-### Graph.(py/rb)
-Create a Graph object and allows you to do Topological Sort and Dijkstra's Algorithm.
+### Graph.(java/py/rb)
+Create a Graph object and allows you to do Topological Sort and Dijkstra's Algorithm (Not available in Java).
 
 ### AcyclicalGraphDriver.(py/rb)
 Drive script to demo how to do Topological Sort in an acyclic Graph. An acyclic Graph means a graph with no graph cycle. It uses the data from <i>SimpleAcylicalGraphData.csv</i> which describes a tyical schedules of Computer Science classes.
@@ -18,6 +18,9 @@ Driver script to demo how to sort Graph with Dijkstra's Algorithm. Dijkstra's Al
 Same as GraphDriver.(py/rb), except it uses the from <i>GraphData.csv</i> with more destinations.
 <br><br>
 \*\*Note: Ruby script is coming soon...
+
+### GraphAdjMatrix.java
+Help script allow Graph.java to do Topoloical Sort.
 
 ## Reference
 In Graph.py, the reference for Dijkstra's Algorithm is <a href="https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/">here</a>

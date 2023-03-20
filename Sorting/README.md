@@ -11,7 +11,7 @@ There are 5 algorithms in this folder:
 <br><br>
 
 ## Files
-There are 6 files in each corresponding folder. Each algorithm has its own file and a driver file of <i>SortingDriver.(py/rb)</i> to call each algorithm and time the run time for each algorithm.
+There are 6 files in each corresponding folder. Each algorithm has its own file and a driver file of <i>SortingDriver.(py/rb)</i> (Driver file not available in Java) to call each algorithm and time the run time for each algorithm.
 <br><br>
 In <i>SortingDriver.(py/rb)</i>, it will assign a random number in an array and time the sorting time for each algorithm. You may assign the following:
 

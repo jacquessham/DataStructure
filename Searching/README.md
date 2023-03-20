@@ -11,6 +11,7 @@ There are two types of searching in this folder.
 ## Files
 There are 2 files which contains a function of the corresponding search method. Additionally, there is a file of <i>SearchingDriver</i> to call each algorithm and time the run time for each algorithm. The script would first initial a sorted array, randomly pick a number, and count the time for the corresponding algorithm. Click on the folder for the correpsonding language, currently there are the following list of language available:
 <ul>
+	<li>Java</li>
 	<li>Python</li>
 	<li>Ruby</li>
 </ul>

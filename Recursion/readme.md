@@ -1,6 +1,7 @@
 # Recursion
 We have the scripts in following language:
 <ul>
+	<li>Java</li>
 	<li>Python</li>
 	<li>Ruby</li>
 	<li>Rust</li>
